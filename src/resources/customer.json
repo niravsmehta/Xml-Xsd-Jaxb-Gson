@@ -1,0 +1,19 @@
+{
+  "customerId" : 101,
+  "name" : "Harry",
+  "dateOfBirth" : 830235600000,
+  "annualSalary" : 50000.0,
+  "address" : {
+    "street" : "400 Main Street",
+    "city" : "Dallas",
+    "zipCode" : 76000,
+    "state" : "Texas"
+  },
+  "payment" : {
+    "cardNumber" : 34005400,
+    "cardName" : "Discover",
+    "dateFrom" : 1397106000000,
+    "dateTill" : 1554786000000,
+    "cardType" : "CREDITCARD"
+  }
+}

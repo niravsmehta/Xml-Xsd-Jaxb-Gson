@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:customer xmlns:ns2="http://www.example.org/Customer/">
+    <customerId>101</customerId>
+    <name>Harry</name>
+    <dateOfBirth>1996-04-23-05:00</dateOfBirth>
+    <annualSalary>50000.0</annualSalary>
+    <address>
+        <street>400 Main Street</street>
+        <city>Dallas</city>
+        <zipCode>76000</zipCode>
+        <state>Texas</state>
+    </address>
+    <payment>
+        <cardNumber>34005400</cardNumber>
+        <cardName>Discover</cardName>
+        <dateFrom>2014-04-10-05:00</dateFrom>
+        <dateTill>2019-04-09-05:00</dateTill>
+        <cardType>CREDITCARD</cardType>
+    </payment>
+</ns2:customer>

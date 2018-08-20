@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/Customer/" targetNamespace="http://www.example.org/Customer/">
+    <element name="Customer" type="tns:Customer"></element>
+    
+    <complexType name="Customer">
+    	<sequence>
+    		<element name="customerId" type="int"></element>
+    		<element name="name" type="string"></element>
+    		<element name="dateOfBirth" type="date"></element>
+    		<element name="annualSalary" type="double"></element>
+    		<element name="address" type="tns:Address" maxOccurs="1" minOccurs="0"></element>
+    		<element name="payment" type="tns:PaymentMethod" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="Address">
+    	<sequence>
+    		<element name="street" type="string"></element>
+    		<element name="city" type="string"></element>
+    		<element name="zipCode" type="int"></element>
+    		<element name="state" type="string"></element>
+    	</sequence>
+    </complexType>
+    
+
+    <complexType name="PaymentMethod">
+    	<sequence>
+    		<element name="cardNumber" type="int"></element>
+    		<element name="cardName" type="string"></element>
+    		<element name="dateFrom" type="date"></element>
+    		<element name="dateTill" type="date"></element>
+    		<element name="cardType">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="CREDITCARD"></enumeration>
+    					<enumeration value="DEBITCARD"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+
+
+</schema>
